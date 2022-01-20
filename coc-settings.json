@@ -1,0 +1,22 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "scss",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python"
+  ],
+
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  "prettier.singleQuote": true,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.semi": true,
+  "html.format.wrapAttributes": "force-aligned"
+}

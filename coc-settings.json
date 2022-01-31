@@ -10,11 +10,11 @@
     "json",
     "python"
   ],
+  "coc.source.file.disableSyntaxes": ["*.ejs"],
 
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-
   "prettier.singleQuote": true,
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.semi": true,

@@ -15,10 +15,14 @@ set noswapfile
 set undofile
 set incsearch
 highlight ColorColumn ctermbg=0
+highlight NonText ctermbg=none
 filetype plugin on
 
 
 call plug#begin()
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'vim-scripts/restore_view.vim'
+Plug 'tpope/vim-commentary'
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'miyakogi/seiya.vim'
 Plug 'sheerun/vim-polyglot'
@@ -26,14 +30,12 @@ Plug 'adrian5/oceanic-next-vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'plasticboy/vim-markdown'
-Plug 'frazrepo/vim-rainbow'
 Plug 'andrewradev/tagalong.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'sbdchd/neoformat'
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'scrooloose/syntastic'
 Plug 'turbio/bracey.vim'
-Plug 'tomasiser/vim-code-dark'
 Plug 'pangloss/vim-javascript'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lepture/vim-css'
@@ -49,7 +51,6 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
-
 
 if (has("termguicolors"))
  set termguicolors
@@ -71,24 +72,13 @@ let g:Hexokinase_ftEnabled = ['css', 'html']
 
 "airline
 let g:airline#extensions#tabline#enabled = 1
-
-" raindbow brackets
-let g:rainbow_load_separately = [
-    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
-    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
-    \ ]
-
 " colorscheme
+
+let g:oceanic_transparent_bg=1
 colorscheme oceanicnext
 let g:airline_theme = 'oceanicnext'
 let g:oceanic_for_polyglot = 1
 let g:oceanic_transparent_bg = 1
-
-
-
-
 
 " nerdtree
 let mapleader = ","
@@ -119,3 +109,5 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 let g:seiya_auto_enable=1
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg']
 
+"closetag
+let g:closetag_filenames = 'html'

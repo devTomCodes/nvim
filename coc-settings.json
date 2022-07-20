@@ -6,11 +6,12 @@
     "javascript",
     "graphql",
     "html",
+    "ejs",
     "yaml",
     "json",
     "python"
   ],
-  "coc.source.file.disableSyntaxes": ["*.ejs"],
+  // "coc.source.file.disableSyntaxes": ["*.ejs"],
 
   // python config
   "python.linting.enabled": true,
@@ -18,5 +19,8 @@
   "prettier.singleQuote": true,
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.semi": true,
-  "html.format.wrapAttributes": "force-aligned"
+  "html.format.wrapAttributes": "force-aligned",
+  // eslint
+  "eslint.run": "onType",
+  "eslint.alwaysShowStatus": true
 }

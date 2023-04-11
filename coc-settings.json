@@ -15,7 +15,8 @@
 
   // python config
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "autopep8",
+  "python.jediEnabled": true,
   "prettier.singleQuote": true,
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.semi": true,

@@ -29,6 +29,8 @@ Plug 'vim-scripts/restore_view.vim'
 Plug 'tpope/vim-commentary'
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'miyakogi/seiya.vim'
+Plug 'mlaursen/vim-react-snippets'
+Plug 'SirVer/ultisnips'
 Plug 'sheerun/vim-polyglot'
 Plug 'adrian5/oceanic-next-vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'

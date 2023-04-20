@@ -23,5 +23,6 @@
   "html.format.wrapAttributes": "force-aligned",
   // eslint
   "eslint.run": "onType",
-  "eslint.alwaysShowStatus": true
+  "eslint.alwaysShowStatus": true,
+  "coc.preferences.extensionUpdateCheck": "daily"
 }

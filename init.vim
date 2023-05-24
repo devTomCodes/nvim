@@ -66,7 +66,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
 endif
-Plug 'glepir/lspsaga.nvim'
+Plug 'glepnir/lspsaga.nvim'
 call plug#end()
 
 

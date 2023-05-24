@@ -22,7 +22,6 @@ filetype plugin on
 
 
 call plug#begin()
-Plug 'neoclide/coc-eslint'
 Plug 'gisphm/vim-gitignore'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'vim-scripts/restore_view.vim'
@@ -64,7 +63,12 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle'     }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+if has("nvim")
+  Plug 'neovim/nvim-lspconfig'
+endif
+Plug 'glepir/lspsaga.nvim'
 call plug#end()
+
 
 if (has("termguicolors"))
  set termguicolors
